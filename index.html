@@ -9,7 +9,7 @@
     content="Premium landscaping and hardscape services for residential and commercial properties."
   />
 
-  <!-- Minimal Apple-style look: clean, airy, simple -->
+  <!-- Minimal clean look: airy, simple -->
   <style>
     :root {
       --bg: #f5f5f7;
@@ -24,11 +24,13 @@
       --radius-lg: 18px;
       --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.06);
     }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, -apple-system,
         "Segoe UI", sans-serif;
@@ -36,19 +38,23 @@
       color: var(--text-main);
       line-height: 1.5;
     }
+
     a {
       color: inherit;
       text-decoration: none;
     }
+
     img {
       max-width: 100%;
       display: block;
     }
+
     .page {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px 60px;
     }
+
     /* NAVBAR */
     .nav {
       position: sticky;
@@ -58,6 +64,7 @@
       background: rgba(245, 245, 247, 0.88);
       border-bottom: 1px solid rgba(210, 210, 215, 0.7);
     }
+
     .nav-inner {
       max-width: 1200px;
       margin: 0 auto;
@@ -67,27 +74,32 @@
       justify-content: space-between;
       padding: 0 20px;
     }
+
     .nav-logo {
       font-weight: 700;
       letter-spacing: 0.04em;
       font-size: 1rem;
     }
+
     .nav-logo span {
       font-weight: 400;
       color: var(--text-muted);
       margin-left: 4px;
       font-size: 0.9rem;
     }
+
     .nav-links {
       display: flex;
       gap: 20px;
       font-size: 0.9rem;
       color: var(--text-muted);
     }
+
     .nav-links a {
       position: relative;
       padding-bottom: 3px;
     }
+
     .nav-links a::after {
       content: "";
       position: absolute;
@@ -98,9 +110,11 @@
       background: var(--accent);
       transition: width 0.2s ease;
     }
+
     .nav-links a:hover::after {
       width: 100%;
     }
+
     .nav-cta {
       font-size: 0.85rem;
       padding: 7px 14px;
@@ -109,6 +123,7 @@
       background: #ffffffaa;
       backdrop-filter: blur(10px);
     }
+
     /* HERO */
     .hero {
       display: grid;
@@ -117,6 +132,7 @@
       align-items: center;
       padding: 50px 0 40px;
     }
+
     .hero-kicker {
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -125,18 +141,21 @@
       font-weight: 600;
       margin-bottom: 12px;
     }
+
     .hero-title {
       font-size: 2.6rem;
       line-height: 1.1;
       letter-spacing: -0.04em;
       margin-bottom: 14px;
     }
+
     .hero-subtitle {
       color: var(--text-muted);
       font-size: 1rem;
       max-width: 32rem;
       margin-bottom: 20px;
     }
+
     .hero-badges {
       display: flex;
       flex-wrap: wrap;
@@ -144,12 +163,14 @@
       margin-bottom: 26px;
       font-size: 0.85rem;
     }
+
     .badge {
       padding: 6px 12px;
       border-radius: 999px;
       background: var(--accent-soft);
       color: var(--accent);
     }
+
     .badge-outline {
       padding: 6px 12px;
       border-radius: 999px;
@@ -157,12 +178,14 @@
       color: var(--text-muted);
       background: rgba(255, 255, 255, 0.9);
     }
+
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
     }
+
     .btn-primary {
       padding: 10px 22px;
       border-radius: 999px;
@@ -174,6 +197,7 @@
       color: #fff;
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
     }
+
     .btn-ghost {
       padding: 8px 18px;
       border-radius: 999px;
@@ -183,11 +207,13 @@
       cursor: pointer;
       color: var(--text-main);
     }
+
     .hero-note {
       font-size: 0.78rem;
       color: var(--text-muted);
       margin-top: 8px;
     }
+
     .hero-visual {
       background: radial-gradient(circle at top left, #dff3e6, #e8ecff 30%, #ffffff 100%);
       border-radius: var(--radius-xl);
@@ -195,6 +221,7 @@
       box-shadow: var(--shadow-soft);
       border: 1px solid rgba(255, 255, 255, 0.7);
     }
+
     .hero-visual-inner {
       border-radius: 18px;
       border: 1px solid rgba(210, 210, 215, 0.7);
@@ -206,6 +233,7 @@
       justify-content: space-between;
       min-height: 260px;
     }
+
     .hero-visual-header {
       font-size: 0.85rem;
       display: flex;
@@ -214,16 +242,19 @@
       opacity: 0.9;
       margin-bottom: 14px;
     }
+
     .hero-visual-title {
       font-size: 1.15rem;
       font-weight: 600;
       margin-bottom: 6px;
     }
+
     .hero-visual-sub {
       font-size: 0.82rem;
       opacity: 0.9;
       max-width: 16rem;
     }
+
     .hero-visual-tags {
       display: flex;
       flex-wrap: wrap;
@@ -231,19 +262,23 @@
       margin-top: 16px;
       font-size: 0.75rem;
     }
+
     .hero-visual-tag {
       padding: 4px 9px;
       border-radius: 999px;
       background: rgba(245, 245, 247, 0.14);
       border: 1px solid rgba(245, 245, 247, 0.2);
     }
+
     /* SECTION WRAPPER */
     .section {
       padding: 40px 0 10px;
     }
+
     .section-header {
       margin-bottom: 20px;
     }
+
     .section-kicker {
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -251,22 +286,26 @@
       color: var(--text-muted);
       margin-bottom: 6px;
     }
+
     .section-title {
       font-size: 1.6rem;
       letter-spacing: -0.02em;
       margin-bottom: 6px;
     }
+
     .section-subtitle {
       color: var(--text-muted);
       font-size: 0.95rem;
       max-width: 34rem;
     }
+
     /* SERVICES GRID */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
     }
+
     .service-card {
       background: var(--card-bg);
       border-radius: var(--radius-lg);
@@ -278,20 +317,24 @@
       gap: 10px;
       min-height: 180px;
     }
+
     .service-label {
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--text-muted);
     }
+
     .service-name {
       font-size: 1.05rem;
       font-weight: 600;
     }
+
     .service-desc {
       font-size: 0.9rem;
       color: var(--text-muted);
     }
+
     .service-meta {
       margin-top: auto;
       display: flex;
@@ -300,16 +343,19 @@
       font-size: 0.85rem;
       color: var(--text-muted);
     }
+
     .price-placeholder {
       font-weight: 600;
       color: var(--text-main);
     }
+
     /* MONTHLY PLANS */
     .plans-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
     }
+
     .plan-card {
       background: var(--card-bg);
       border-radius: var(--radius-lg);
@@ -320,30 +366,36 @@
       flex-direction: column;
       gap: 8px;
     }
+
     .plan-name {
       font-weight: 600;
       font-size: 1rem;
     }
+
     .plan-tagline {
       font-size: 0.88rem;
       color: var(--text-muted);
       margin-bottom: 6px;
     }
+
     .plan-price {
       font-size: 1.2rem;
       font-weight: 600;
     }
+
     .plan-price span {
       font-size: 0.8rem;
       color: var(--text-muted);
       font-weight: 400;
     }
+
     .plan-list {
       margin: 10px 0 0;
       padding-left: 16px;
       font-size: 0.88rem;
       color: var(--text-muted);
     }
+
     /* WHY CHOOSE US */
     .why-grid {
       display: grid;
@@ -351,6 +403,7 @@
       gap: 24px;
       align-items: center;
     }
+
     .pill-list {
       list-style: none;
       display: flex;
@@ -358,6 +411,7 @@
       gap: 10px;
       margin-top: 8px;
     }
+
     .pill-item {
       padding: 10px 14px;
       border-radius: 999px;
@@ -368,13 +422,16 @@
       justify-content: space-between;
       gap: 10px;
     }
+
     .pill-label {
       font-weight: 500;
     }
+
     .pill-meta {
       color: var(--text-muted);
       font-size: 0.8rem;
     }
+
     .why-card {
       border-radius: var(--radius-lg);
       background: radial-gradient(circle at top, #dff3e6, #ffffff 60%);
@@ -383,18 +440,21 @@
       box-shadow: var(--shadow-soft);
       font-size: 0.88rem;
     }
+
     .why-card h4 {
       margin-bottom: 8px;
     }
+
     .why-card p {
       color: var(--text-muted);
       margin-bottom: 8px;
     }
+
     /* CONTACT / CTA */
     .cta {
       margin-top: 30px;
       padding: 22px 20px;
-      border-radius: var(--radius-xl);
+      border-radius: var(--radius-xl;
       background: linear-gradient(135deg, #1f4b28, #355b32);
       color: #f5f5f7;
       display: flex;
@@ -403,19 +463,23 @@
       justify-content: space-between;
       align-items: center;
     }
+
     .cta-title {
       font-size: 1.4rem;
       margin-bottom: 6px;
     }
+
     .cta-text {
       font-size: 0.9rem;
       opacity: 0.9;
     }
+
     .cta-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
+
     .cta-pill {
       font-size: 0.84rem;
       padding: 7px 13px;
@@ -423,6 +487,7 @@
       border: 1px solid rgba(245, 245, 247, 0.4);
       background: rgba(0, 0, 0, 0.18);
     }
+
     /* FOOTER */
     footer {
       padding-top: 20px;
@@ -435,36 +500,45 @@
       justify-content: space-between;
       gap: 10px;
     }
+
     /* RESPONSIVE */
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: minmax(0, 1fr);
       }
+
       .hero-visual {
         order: -1;
       }
+
       .services-grid,
       .plans-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
       .why-grid {
         grid-template-columns: minmax(0, 1fr);
       }
     }
+
     @media (max-width: 640px) {
       .nav-links {
         display: none;
       }
+
       .hero {
         padding-top: 36px;
       }
+
       .hero-title {
         font-size: 2.1rem;
       }
+
       .services-grid,
       .plans-grid {
         grid-template-columns: minmax(0, 1fr);
       }
+
       .cta {
         flex-direction: column;
         align-items: flex-start;
@@ -496,17 +570,19 @@
     <!-- HERO -->
     <section class="hero">
       <div>
-        <div class="hero-kicker">Premium landscaping, Apple-clean design</div>
+        <div class="hero-kicker">Premium landscaping, clean design</div>
         <h1 class="hero-title">Beautiful yards. Zero hassle.</h1>
         <p class="hero-subtitle">
           Millennium Landscaping Inc. delivers reliable, professional lawn care and hardscape services
           that keep your property sharp, clean, and ready for every season.
         </p>
+
         <div class="hero-badges">
           <div class="badge">✔ 20+ years experience</div>
           <div class="badge-outline">Neighbors in your community</div>
           <div class="badge-outline">Licensed &amp; insured</div>
         </div>
+
         <div class="hero-actions">
           <button class="btn-primary">Request a Free Estimate</button>
           <button class="btn-ghost">View Monthly Plans</button>
@@ -515,7 +591,8 @@
           Call <strong>[YOUR PHONE NUMBER]</strong> or email <strong>[YOUR EMAIL]</strong>
         </div>
       </div>
-      <!-- HERO VISUAL -->
+
+      <!-- HERO VISUAL (placeholder “screenshot style” card) -->
       <div class="hero-visual">
         <div class="hero-visual-inner">
           <div>
@@ -538,7 +615,8 @@
         </div>
       </div>
     </section>
-    <!-- CORE SERVICES -->
+
+    <!-- CORE SERVICES (GRID) -->
     <section id="lawn-care" class="section">
       <div class="section-header">
         <div class="section-kicker">Services</div>
@@ -548,6 +626,7 @@
           your property.
         </p>
       </div>
+
       <div class="services-grid">
         <!-- Lawn Care Card -->
         <article class="service-card">
@@ -558,10 +637,13 @@
             throughout the season.
           </p>
           <div class="service-meta">
-            <span class="price-placeholder">[STARTING AT: $XX PER VISIT]</span>
+            <span class="price-placeholder">
+              [STARTING AT: $XX PER VISIT]
+            </span>
             <span>Grass height maintained · Edges clean</span>
           </div>
         </article>
+
         <!-- Yard Cleanup -->
         <article class="service-card">
           <div class="service-label">Seasonal</div>
@@ -571,10 +653,13 @@
             first impression.
           </p>
           <div class="service-meta">
-            <span class="price-placeholder">[CLEANUP BUNDLES FROM: $XX]</span>
+            <span class="price-placeholder">
+              [CLEANUP BUNDLES FROM: $XX]
+            </span>
             <span>One-time or add to plan</span>
           </div>
         </article>
+
         <!-- Mulching -->
         <article id="flower-beds" class="service-card">
           <div class="service-label">Beds &amp; Borders</div>
@@ -583,10 +668,13 @@
             Crisp bed edges, fresh mulch, and weed control that make your flowers and shrubs stand out.
           </p>
           <div class="service-meta">
-            <span class="price-placeholder">[PER YARD / PER PROJECT: $XX]</span>
+            <span class="price-placeholder">
+              [PER YARD / PER PROJECT: $XX]
+            </span>
             <span>Includes delivery &amp; install*</span>
           </div>
         </article>
+
         <!-- Tree care -->
         <article id="tree-care" class="service-card">
           <div class="service-label">Tree Care</div>
@@ -595,10 +683,13 @@
             Careful pruning and shaping to promote healthy growth and keep views and walkways clear.
           </p>
           <div class="service-meta">
-            <span class="price-placeholder">[TRIMMING STARTS AT: $XX]</span>
+            <span class="price-placeholder">
+              [TRIMMING STARTS AT: $XX]
+            </span>
             <span>Price based on size &amp; access</span>
           </div>
         </article>
+
         <!-- Hardscape -->
         <article id="patios" class="service-card">
           <div class="service-label">Hardscape</div>
@@ -608,10 +699,13 @@
             increase property value.
           </p>
           <div class="service-meta">
-            <span class="price-placeholder">[PROJECT MINIMUM: $XX,XXX]</span>
+            <span class="price-placeholder">
+              [PROJECT MINIMUM: $XX,XXX]
+            </span>
             <span>Free on-site estimate</span>
           </div>
         </article>
+
         <!-- Fences / Extras -->
         <article class="service-card">
           <div class="service-label">Extras</div>
@@ -621,12 +715,15 @@
             and budget.
           </p>
           <div class="service-meta">
-            <span class="price-placeholder">[CUSTOM QUOTES · ENTER PRICE]</span>
+            <span class="price-placeholder">
+              [CUSTOM QUOTES · ENTER PRICE]
+            </span>
             <span>Priced per project</span>
           </div>
         </article>
       </div>
     </section>
+
     <!-- MONTHLY PLANS -->
     <section id="plans" class="section">
       <div class="section-header">
@@ -637,23 +734,31 @@
           your exact monthly pricing.
         </p>
       </div>
+
       <div class="plans-grid">
         <!-- Basic Plan -->
         <article class="plan-card">
           <div class="plan-name">Essential Care</div>
           <div class="plan-tagline">Perfect for small to mid-size yards.</div>
-          <div class="plan-price">[ESSENTIAL PLAN: $XX/MO]<span> · Weekly or bi-weekly</span></div>
+          <div class="plan-price">
+            [ESSENTIAL PLAN: $XX/MO]
+            <span> · Weekly or bi-weekly</span>
+          </div>
           <ul class="plan-list">
             <li>Regular mowing &amp; trimming</li>
             <li>Blowing hard surfaces</li>
             <li>Basic weed control in turf</li>
           </ul>
         </article>
+
         <!-- Standard Plan -->
         <article class="plan-card">
           <div class="plan-name">Premium Care</div>
           <div class="plan-tagline">Most popular option for busy homeowners.</div>
-          <div class="plan-price">[PREMIUM PLAN: $XX/MO]<span> · Lawn &amp; beds bundle</span></div>
+          <div class="plan-price">
+            [PREMIUM PLAN: $XX/MO]
+            <span> · Lawn &amp; beds bundle</span>
+          </div>
           <ul class="plan-list">
             <li>Everything in Essential</li>
             <li>Mulch refresh (scheduled)</li>
@@ -661,11 +766,15 @@
             <li>Seasonal yard cleanups</li>
           </ul>
         </article>
+
         <!-- Top Plan -->
         <article class="plan-card">
           <div class="plan-name">Full Property Care</div>
           <div class="plan-tagline">For properties that must look sharp year-round.</div>
-          <div class="plan-price">[FULL CARE PLAN: $XX/MO]<span> · Tailored to your property</span></div>
+          <div class="plan-price">
+            [FULL CARE PLAN: $XX/MO]
+            <span> · Tailored to your property</span>
+          </div>
           <ul class="plan-list">
             <li>Custom visit frequency</li>
             <li>Priority scheduling</li>
@@ -675,6 +784,7 @@
         </article>
       </div>
     </section>
+
     <!-- WHY CHOOSE US -->
     <section class="section">
       <div class="section-header">
@@ -685,6 +795,7 @@
           we’ve kept clients with us season after season.
         </p>
       </div>
+
       <div class="why-grid">
         <div>
           <ul class="pill-list">
@@ -706,6 +817,7 @@
             </li>
           </ul>
         </div>
+
         <aside class="why-card">
           <h4>How to use this layout</h4>
           <p>
@@ -721,6 +833,7 @@
         </aside>
       </div>
     </section>
+
     <!-- CONTACT / CTA -->
     <section id="contact" class="section">
       <div class="cta">
@@ -731,6 +844,7 @@
             patios, or a full refresh.
           </div>
         </div>
+
         <div class="cta-actions">
           <div>
             <div class="cta-pill">
@@ -746,13 +860,16 @@
         </div>
       </div>
     </section>
+
     <!-- FOOTER -->
     <footer>
       <div>© <span id="year"></span> Millennium Landscaping Inc. All rights reserved.</div>
       <div>Designed for clarity · Built for your yard</div>
     </footer>
   </main>
+
   <script>
+    // Auto-update year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
